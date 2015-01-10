@@ -36,7 +36,7 @@
     var pendulumRadius = 50;
 
     var pendulums = [];
-    for(var i = 0 ;i <3; ++i){
+    for(var i = 0 ;i <4; ++i){
         pendulums[i] = new NP.Pendulum(270, circleRadius, initPosition.x + circleRadius*2*i ,initPosition.y,  initPosition.z, pendulumRadius);
         pendulums[i].applyForce(gravity);
         physics.add(pendulums[i]);
