@@ -80,7 +80,7 @@ NextPhysics = function (canvasContainer, parameters) {
 
   this.forces = [];
 
-  this.deltaT = 1/600;
+  this.deltaT = 1/100;
 
   this.setValues(parameters);
 
@@ -106,7 +106,7 @@ NextPhysics = function (canvasContainer, parameters) {
     var loop = function() {
       this.update();
       this.render();
-      //requestAnimationFrame(loop, renderer.canvas);
+      requestAnimationFrame(loop, renderer.canvas);
     }.bind(this);
 
     var debugLoop = function() {
